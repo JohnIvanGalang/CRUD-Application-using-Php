@@ -12,7 +12,7 @@ $result = $stmt->get_result();
 // var_dump($data);
 
 while ($row = $result->fetch_assoc()): ?>
-    <div class="col">
+    <div class="col mb-3">
         <div class="card">
             <img src="books-sample.jpg" class="card-img-top">
             <div class="card-body d-flex flex-column justify-content-end w-100 p-1">

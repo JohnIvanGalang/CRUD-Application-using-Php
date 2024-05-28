@@ -12,10 +12,16 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+
     <style>
-        /* div {
-            border: solid green 1px;
-        } */
+        * {
+            font-family: "Edu TAS Beginner", cursive;
+            font-optical-sizing: auto;
+        }
     </style>
 </head>
 
@@ -24,7 +30,7 @@
         <div class="border border-dark rounded mx-2">    <!--test padding 2 -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">  <!-- removed padding -->
                 <div class="container-fluid">
-                    <a class="navbar-brand fw-bolder" href="main.html"> Readn'Learn <i class="bi bi-journal-code"></i></a>
+                    <a class="navbar-brand fw-bolder" href="../includes/main.php"> Readn'Learn <i class="bi bi-journal-code"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,10 +39,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link fw-bold" aria-current="page" href="main.php"> Books </a>
+                                <a class="nav-link fw-bold text-dark" aria-current="page" href="main.php"> Books<i class="bi bi-bookmark"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fw-bold" href="add.php"> Add Books </a>
+                                <a class="nav-link fw-bold text-dark" href="add.php"> Add Books<i class="bi bi-box-arrow-in-up"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +51,7 @@
         </div>
 
         <!-- grid form books -->
-        <div class="row row-cols-1 row-cols-lg-6 row-cols-md-4 row-cols-sm-2 g-4 mx-auto mt-2">
+        <div class="row row-cols-1 row-cols-lg-6 row-cols-md-4 row-cols-sm-3 g-4 mx-auto mt-2">
                 <?php 
                     include '../view/read.php'; 
                 ?>
